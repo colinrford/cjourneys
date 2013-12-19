@@ -9,4 +9,4 @@ Hopefully we will see some cool things in C in this repo though! Without further
 -- Colin
 -- Majors in Physics and Mathematics
 -- Minor in Computer Science
--- Purdue University
+-- Undergraduate at Purdue University
