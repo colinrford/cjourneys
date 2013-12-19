@@ -1,3 +1,8 @@
+C Journeys
+==========
+
+## Hey, Listen! ##
+
 Oh, hey!
 
 So this is my read me. My first public one since all my others are private due to them having class material in them. 
@@ -6,7 +11,7 @@ This repository is purely for my trials and errors during my time learning C. It
 
 Hopefully we will see some cool things in C in this repo though! Without further ado, let my journeys in C begin!
 
--- Colin
--- Majors in Physics and Mathematics
--- Minor in Computer Science
--- Undergraduate at Purdue University
+> [Colin](http://www.linkedin.com/pub/colin-ford/80/b7b/237) <br />
+> Majors in Physics and Mathematics <br />
+> Minor in Computer Science <br />
+> Undergraduate at [Purdue University](http://www.purdue.edu)
