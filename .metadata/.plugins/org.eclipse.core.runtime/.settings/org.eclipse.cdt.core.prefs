@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+environment/workspace/GCC\ INCLUDE/delimiter=;
+environment/workspace/GCC\ INCLUDE/operation=append
+environment/workspace/GCC\ INCLUDE/value=C\:\\cygwin\\usr\\lib\\gcc\\x86_64-pc-cygwin\\4.8.1\\include
+environment/workspace/PATH/delimiter=;
+environment/workspace/PATH/operation=replace
+environment/workspace/PATH/value=C\:\\Program Files (x86)\\Intel\\iCLS Client\\;C\:\\Program Files\\Intel\\iCLS Client\\;C\:\\WINDOWS\\system32;C\:\\WINDOWS;C\:\\WINDOWS\\System32\\Wbem;C\:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C\:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C\:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C\:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C\:\\cygwin\\bin;C\:\\Program Files\\Java\\jdk1.7.0_40\\bin;C\:\\Program Files (x86)\\Vim\\vimfiles\\plugin\\cmd.vim;C\:\\MinGW\\bin;C\:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C\:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64
+environment/workspace/append=true
+environment/workspace/appendContributed=true
+macros/workspace=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<macros/>\r\n
+org.eclipse.cdt.core.showSourceRootsAtTopLevelOfProject=true
