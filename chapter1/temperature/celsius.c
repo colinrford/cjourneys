@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Exercise 1.3
+// Exercise 1.4
 
 /* print Celsius-Fahrenheit table for cels = 0, 20, ..., 300 */
 
