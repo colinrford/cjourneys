@@ -1,6 +1,0 @@
-15:32:08 **** Rebuild of configuration Debug for project helloworld ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o helloworld.o "..\\helloworld.c" 
-
-15:32:08 Build Finished (took 585ms)
-
