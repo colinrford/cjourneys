@@ -8,7 +8,7 @@
 
 main()
 {
-    int c, i, j, k, lc, state;
+    int c, i, j, lc, state;
     int wordlength[WORDLEN + 1];
 
     state = OUT;
