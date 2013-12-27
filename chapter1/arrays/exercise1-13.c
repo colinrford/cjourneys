@@ -39,7 +39,10 @@ main()
     }
     for (i = 0; i < WORDLEN; i++)
     {
-        printf("%d:", i + 1);
+        if (i < WORDLEN - 1)
+            printf("%d:", i + 1);
+        else
+            printf("10+:");
         if (wordlength[i] != 0)
         {
             for (j = 0; j < wordlength[i]; j++)
