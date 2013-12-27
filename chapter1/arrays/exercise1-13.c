@@ -21,18 +21,17 @@ main()
         {
             state = OUT;
             if (lc == 0)
-                break;
+                continue;
             else if (lc < WORDLEN)
                 ++wordlength[lc];
             else if (lc >= WORDLEN)
-                ++wordlength[10];
+                ++wordlength[WORDLEN];
             lc = 0;
         }
         else if (state == OUT)
         {
             state = IN;
             ++nw;
-            lc = 0;
         }
         if (state == IN)
         {
