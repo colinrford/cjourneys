@@ -20,29 +20,38 @@ main()
     if (c == ' ' || c == '\n' || c == '\t')
     {
       state = OUT;
+      lc = 0;
     }
     else if (state == OUT)
     {
       state = IN;
       ++nw;
+      lc = 0;
     }
     if (state == IN)
     {
       ++lc;
-      if (lc <= WORDLEN)
+      if (lc == 0)
+        ;
+      else if (lc <= WORDLEN)
         ++wordlength[lc];
       else if (lc > WORDLEN)
         ++wordlength[10];
     }
   }
-  for (j = 0; j <= WORDLEN; ++j)
+  for (j = 0; j < WORDLEN; ++j)
   {
     int k = 0;
     printf("%d:", (j + 1));
     while (k <= wordlength[j])
     {
-      printf("*");
-      ++k;
+      if (wordlength[j] == 0)
+        break;
+      else 
+      {
+        printf("*");
+        ++k;
+      }
     }
     printf("\n");
   }
