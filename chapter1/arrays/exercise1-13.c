@@ -32,7 +32,7 @@ main()
     {
       ++lc;
       if (lc == 0)
-        ;
+        break;
       else if (lc <= WORDLEN)
         ++wordlength[lc];
       else if (lc > WORDLEN)
