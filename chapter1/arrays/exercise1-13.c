@@ -8,51 +8,48 @@
 
 main()
 {
-  int c, i, j, nw, lc, state;
-  int wordlength[WORDLEN + 1];
+    int c, i, j, lc, state;
+    int wordlength[WORDLEN + 1];
 
-  state = OUT;
-  nw = lc = 0;
-  for (i = 0; i < WORDLEN; ++i)
-    wordlength[i] = 0;
-  while ((c = getchar()) != EOF)
-  {
-    if (c == ' ' || c == '\n' || c == '\t')
+    state = OUT;
+    lc = 0;
+    for (i = 0; i < WORDLEN; i++)
+        wordlength[i] = 0;
+    while ((c = getchar()) != EOF)
     {
-      state = OUT;
-      lc = 0;
+        if (c == ' ' || c == '\n' || c == '\t')
+        {
+            state = OUT;
+            if (lc == 0)
+                continue;
+            else if (lc < WORDLEN)
+                wordlength[lc - 1]++;
+            else if (lc >= WORDLEN)
+                wordlength[WORDLEN]++;
+            lc = 0;
+        }
+        else if (state == OUT)
+        {
+            state = IN;
+        }
+        if (state == IN)
+        {
+            ++lc;
+        }
     }
-    else if (state == OUT)
+    for (i = 0; i < WORDLEN; i++)
     {
-      state = IN;
-      ++nw;
-      lc = 0;
+        if (i < WORDLEN - 1)
+            printf("%d:", i + 1);
+        else
+            printf("10+:");
+        if (wordlength[i] != 0)
+        {
+            for (j = 0; j < wordlength[i]; j++)
+            {
+                printf("*");
+            }
+        }
+        printf("\n");
     }
-    if (state == IN)
-    {
-      ++lc;
-      if (lc == 0)
-        break;
-      else if (lc <= WORDLEN)
-        ++wordlength[lc];
-      else if (lc > WORDLEN)
-        ++wordlength[10];
-    }
-  }
-  for (j = 0; j < WORDLEN; ++j)
-  {
-    int k = 0;
-    printf("%d:", (j + 1));
-    while (k <= wordlength[j])
-    {
-      if (wordlength[j] == 0)
-        break;
-      else 
-      {
-        printf("*");
-        ++k;
-      }
-    }
-    printf("\n");
-  }
 }
