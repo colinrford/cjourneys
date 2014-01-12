@@ -7,7 +7,12 @@
 main()
 {
   int c, i, j;
-  int characters[MAXCHARNUM + 1]; // if in other character sets
+  int characters[MAXCHARNUM]; // ASCII
+
+  for (i = 0; i < MAXCHARNUM; i++)
+  {
+    characters[i] = 0;
+  }
 
   while ((c = getchar()) != EOF)
   {
@@ -16,14 +21,14 @@ main()
 
   for (i = 0; i < MAXCHARNUM; i++)
   {
-    printf("%d: ", i);
     if (characters[i] != 0)
     {
+      printf("%c: ", i);
       for (j = 0; j < characters[i]; j++)
       {
         printf("*");
       }
+      printf("\n");
     }
-    printf("\n");
   }
 }
