@@ -2,29 +2,35 @@
 #define MAXLINE 1000 // max line input size
 
 /* Exercise 1-18: Write a program to remove trailing blanks and tabs from each line of input, and to delete entirely blank lines. */
+int getlinefour(char s[], int lim);
 
 main()
 {
   int len; // current line length
-  int max; // maximum length seen so far
   char line[MAXLINE]; // current input line
-  char longest[MAXLINE]; // longest line saved here
 
-  max = 0;
-  while ((len = getline(line, MAXLINE)) > 0)
-  {
-    if (len > max)
-    {
-      max = len;
-      copy(longest, line);
-    }
-  }
-  if (max > 0) // there was a line
-  {
-    printf("%s", longest);
-  }
+  len = getlinefour(line, MAXLINE);  
+  
+  printf("%s", line);
+
   return 0;
 }
 
-/* l;askdf */
+/* getlinefour: real dumb name for this thing */
+int getlinefour(char s[], int lim)
+{
+  int c, i;
 
+  for (i = 0; i < lim - 1 && (c = getchar()) != EOF; i++)
+  {
+    if (s[i - 1] == c == '\t' || s[i - 1] == c == '\n' || s[i - 1] == c == ' ')
+      continue;
+  
+    else
+      s[i] = c;
+  }
+  
+  s[i] = '\0';
+  
+  return i;
+}
